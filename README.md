@@ -1,6 +1,6 @@
 # Facial Expression Recognition with Vision Transformers (FER2013)
 
-Student Names: Hila Levi Yosefi and Noa Amsalem
+**Students Names**: Hila Levi Yosefi and Noa Amsalem
 
 Robust Facial Expression Recognition (FER) using a pretrained **ViT/MAE** backbone with partial freezing and fine-tuning on **FER2013**.
 
