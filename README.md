@@ -13,17 +13,9 @@ Robust Facial Expression Recognition (FER) using a pretrained **ViT/MAE** backbo
 
 ---
 
-## Environment & Installation
+## Installation
 
 ```bash
-# 1) Create a fresh environment (conda recommended)
-conda create -n fer-vit python=3.10 -y
-conda activate fer-vit
-
-# 2) Install PyTorch (pick the right CUDA/CPU option from https://pytorch.org/get-started/locally/)
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121  # example
-
-# 3) Install project dependencies
 pip install -r requirements.txt
 ```
 
