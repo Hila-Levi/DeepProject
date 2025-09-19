@@ -79,8 +79,8 @@ The notebook:
 
 The notebook evaluates on validation/test split and can produce:
 - Accuracy
-- (Optional) Classification report
-- (Optional) Confusion matrix
+- Classification report
+- Confusion matrix
 
 ---
 
