@@ -1,15 +1,10 @@
-# DeepProject
-Our project develops an AI system that can automatically classify human facial expressions. It aims to contribute to research in affective computing and potential real-world applications.
-
 # Facial Expression Recognition with Vision Transformers (FER2013)
 
 Robust Facial Expression Recognition (FER) using a pretrained **ViT/MAE** backbone with partial freezing and fine-tuning on **FER2013**.
 
-> This README aligns with the accompanying project report (PDF).
-
 ---
 
-## 🧭 Overview
+## Overview
 
 - **Backbone:** Vision Transformer Masked Autoencoder (**ViTMAE**) pretrained on ImageNet
 - **Transfer learning:** Freeze **embeddings + blocks [0..3]**, fine-tune higher layers
@@ -18,25 +13,7 @@ Robust Facial Expression Recognition (FER) using a pretrained **ViT/MAE** backbo
 
 ---
 
-## 📦 Repository Structure
-
-```
-.
-├─ FER_ViT.ipynb                 # Main notebook (training & evaluation)
-├─ src/
-│  ├─ data.py                    # Dataset + transforms (optional if you split code)
-│  ├─ model.py                   # ViT/MAE model wrapper (optional)
-│  ├─ train.py                   # Scripted training loop (optional)
-│  └─ utils.py                   # Logging, checkpointing, metrics (optional)
-├─ report/
-│  └─ FER_project_report.pdf     # Final report (PDF)
-├─ README.md                     # This file
-└─ requirements.txt              # Python dependencies
-```
-
----
-
-## ⚙️ Environment & Installation
+## Environment & Installation
 
 ```bash
 # 1) Create a fresh environment (conda recommended)
@@ -52,11 +29,9 @@ pip install -r requirements.txt
 
 ---
 
-## 🗃️ Data: FER2013
+## Data: FER2013
 
-1. Download **FER2013** (Kaggle challenge).  
-2. Unzip so images/CSV are available.  
-3. The code expects the dataset folder to be available (e.g., `./data/fer2013/`).
+Download 'Dataset/archive.zip'  
 
 Typical transforms:
 - Resize to **224×224**
@@ -65,11 +40,11 @@ Typical transforms:
 
 ---
 
-## 🚀 Quickstart (Notebook)
+## Quickstart (Notebook)
 
 Open and run:
 ```
-FER_ViT.ipynb
+Code Files/FER_ViT.ipynb
 ```
 
 The notebook:
@@ -82,7 +57,7 @@ The notebook:
 
 ---
 
-## 🧪 Training Configuration
+## Training Configuration
 
 - **Backbone:** `ViTMAEModel` (Hugging Face)
 - **Head:** Linear classifier on `[CLS]` token → 7 classes
@@ -94,7 +69,7 @@ The notebook:
 
 ---
 
-## 📈 Results (from latest run)
+## Results (from latest run)
 
 - **Epoch 1:** loss=**1.7723**, val_acc=**14.81%**
 - **Epoch 2:** loss=**1.5935**, val_acc=**16.27%**
@@ -108,7 +83,7 @@ The notebook:
 
 ---
 
-## 🧪 Evaluation
+## Evaluation
 
 The notebook evaluates on validation/test split and can produce:
 - Accuracy
@@ -117,7 +92,7 @@ The notebook evaluates on validation/test split and can produce:
 
 ---
 
-## 🔁 Reproduce Our Setup
+## Reproduce Our Setup
 
 - Freeze **embeddings + blocks [0..3]**
 - Use **AdamW** (3e-5) + **Cosine Annealing**
@@ -131,17 +106,17 @@ For improvements:
 
 ---
 
-## 🧑‍⚖️ Ethics
+## Ethics
 
-We include an **Ethics Statement** (stakeholders, responsibilities, reflection) and note potential **bias** and **misuse** risks for FER systems. See the full report in `report/FER_project_report.pdf`.
+We include an **Ethics Statement** (stakeholders, responsibilities, reflection) and note potential **bias** and **misuse** risks for FER systems. See the full report in `Project Report/FER_project_report.pdf`.
 
 ---
 
-## 🧾 Citation
+## Citation
 
 If you use this repo, please cite:
 
-- Project Report: `report/FER_project_report.pdf`
+- Project Report: `Project Report/FER_project_report.pdf`
 
 **Key References**
 - Deng, J. *et al.*, 2009 — ImageNet (CVPR)
@@ -151,13 +126,13 @@ If you use this repo, please cite:
 
 ---
 
-## 👥 Authors
+## Authors
 
 - **Hila Levi Yosefi**
 - **Noa Amsalem**
 
 ---
 
-## 📄 License
+## License
 
-Add your license of choice (e.g., MIT) in `LICENSE`.
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
