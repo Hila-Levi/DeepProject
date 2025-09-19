@@ -45,7 +45,7 @@ The notebook:
 - **Freezes embeddings + first 4 transformer blocks**
 - Trains with **AdamW** + **CosineAnnealing**
 - Logs validation accuracy and loss
-- Saves plots and (optionally) checkpoints
+- Saves plots
 
 ---
 
