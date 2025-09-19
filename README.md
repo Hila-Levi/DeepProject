@@ -32,7 +32,7 @@ Typical transforms:
 
 ---
 
-## Quickstart (Notebook)
+## Quickstart
 
 Open and run:
 ```
