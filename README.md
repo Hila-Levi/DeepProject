@@ -84,47 +84,7 @@ The notebook evaluates on validation/test split and can produce:
 
 ---
 
-## Reproduce Our Setup
-
-- Freeze **embeddings + blocks [0..3]**
-- Use **AdamW** (3e-5) + **Cosine Annealing**
-- Train ~**80 epochs**
-- Use ImageNet-style augmentations and normalization
-
-For improvements:
-- Gradual unfreezing (fine-tune deeper layers)
-- Class balancing (oversampling or weighted loss)
-- Larger backbones or MAE variants
-
----
-
-## Ethics
-
-We include an **Ethics Statement** (stakeholders, responsibilities, reflection) and note potential **bias** and **misuse** risks for FER systems. See the full report in `Project Report/FER_project_report.pdf`.
-
----
-
-## Citation
-
-If you use this repo, please cite:
-
-- Project Report: `Project Report/FER_project_report.pdf`
-
-**Key References**
-- Deng, J. *et al.*, 2009 — ImageNet (CVPR)
-- Dosovitskiy, A. *et al.*, 2020 — ViT (ICLR)
-- He, K. *et al.*, 2022 — MAE (CVPR)
-- Khan, A. R., 2022 — FER review (*Information*, 13(6):268), https://doi.org/10.3390/info13060268
-
----
-
 ## Authors
 
 - **Hila Levi Yosefi**
 - **Noa Amsalem**
-
----
-
-## License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
